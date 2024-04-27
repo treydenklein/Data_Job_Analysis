@@ -21,7 +21,7 @@ for job_title, group_data in grouped:
     plt.figure(figsize=(10, 6))
     plt.barh(group_data["skills"], group_data["demand_count"], color=colors)
     plt.title(f"Top 5 Skills for {job_title}")
-    plt.xlabel("Demand")
+    plt.xlabel("Frequency")
     plt.xticks(rotation=45)
     plt.gca().invert_yaxis()  # Invert y-axis to display highest demand at the top
     plt.tight_layout()  # Adjust layout to prevent overlap
