@@ -21,7 +21,7 @@ plt.figure(figsize=(12, 6))
 plt.subplot(2, 1, 1)  # 2 rows, 1 column, plot 1
 plt.bar(skills, demand_counts, color="skyblue")
 plt.title("Demand by Skill")
-plt.ylabel("Demand")
+plt.ylabel("Frequency")
 
 # Plot average salaries by skill
 plt.subplot(2, 1, 2)  # 2 rows, 1 column, plot 2

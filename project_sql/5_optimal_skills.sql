@@ -46,9 +46,9 @@ LIMIT 10;
 
 /*
 Quick Breakdown of the Query Results:
-- SQL and Python are the most in-demand skills
-- Focs on SQL, Python, AWS, and Spark for the highest paying, in-demand roles
-- Despite lower demand, Java still overs good pay
+- SQL and Python are the most in-demand skills overall
+- Focus on SQL, Python, AWS, and Spark for high-paying, in-demand roles
+- Despite lower demand, Java still offers good pay
 - Excel and Power BI roles are plentiful, but with lower average pay
 
 Results:

@@ -218,3 +218,62 @@ _Bar graph visualizing the top 5 skills for Senior Data Scientist roles, based o
 
 ![Top 5 Skills for Software Engineer](assets/top_5_skills_for_software_engineer.png)
 _Bar graph visualizing the top 5 skills for Software Engineer roles, based on the frequency of mentions in job postings_
+
+### 4. Most Optimal Skills to Learn
+
+SQL Query:
+
+- Filter job postings by the year (2023) and the country that the job is located (U.S.)
+- Group data by skill and calculate demand and average salary for each
+- Return the first 10 rows after ordering data by demand and average salary in descending order
+
+```sql
+-- Use Query #1 as a CTE
+WITH postings AS (
+    SELECT
+        job_postings.job_id AS job_id,
+        job_postings.job_title_short AS job_title,
+        companies_dim.name AS company_name,
+        job_postings.job_location AS job_location,
+        job_postings.salary_year_avg AS avg_yearly_salary,
+        job_postings.job_posted_date::DATE AS date_posted
+    FROM
+        job_postings
+    JOIN companies_dim ON
+        companies_dim.company_id = job_postings.company_id
+    WHERE
+        job_postings.job_country = 'United States' AND
+        EXTRACT(YEAR FROM job_postings.job_posted_date) = 2023
+    ORDER BY
+        date_posted
+)
+
+-- Return top 10 skills with the highest demand and avg salary
+SELECT
+    skills_dim.skill_id AS skill_id,
+    skills_dim.skills AS skills,
+    COUNT(job_skills_dim.job_id) AS demand_count,
+    ROUND(AVG(postings.avg_yearly_salary), 0) AS avg_salary
+FROM
+    postings
+INNER JOIN job_skills_dim ON
+    postings.job_id = job_skills_dim.job_id
+INNER JOIN skills_dim ON
+    job_skills_dim.skill_id = skills_dim.skill_id
+GROUP BY
+    skills_dim.skill_id
+ORDER BY
+    demand_count DESC,
+    avg_salary DESC
+LIMIT 10;
+```
+
+Here is a breakdown of the results:
+
+- **SQL** and **Python** are the most in-demand skills overall
+- Focus on **SQL**, **Python**, **AWS**, and **Spark** for high-paying, in-demand roles
+- Despite lower demand, **Java** still offers good pay
+- **Excel** and **Power BI** roles are plentiful, but with lower average pay
+
+![Most Optimal Skills to Learn](assets/most_optimal_skills_to_learn.png)
+_Bar graph visualizing the top 10 skills to learn, based on market demand and average salary_
