@@ -4,12 +4,12 @@
 - Investigating:
   - 💰 Top-Paying Jobs
   - 🔥 In-Demand Skills
-  - 📈 Where High Demand meets High Salary in the World of Data
+  - 📈 Where High Demand Meets High Salary in the World of Data
 
 # The Tools I Used
 
 - **SQL:** Running queries on the project database and revealing initial insights
-- **Python:** Primarily used for data visualization here
+- **Python:** For this project, Python is primarily used for data visualization
   - **Libraries:** Pandas, Numpy, Matplotlib
 - **PostgreSQL:** Database management system
 - **Visual Studio Code:** My preferred IDE for project management and executing scripts in various programming languages
@@ -277,3 +277,15 @@ Here is a breakdown of the results:
 
 ![Most Optimal Skills to Learn](assets/most_optimal_skills_to_learn.png)
 _Bar graph visualizing the top 10 skills to learn, based on market demand and average salary_
+
+# Conclusions
+
+### Insights
+
+1. **Job Demand in the Tech/Data Field:** The demand for tech and data-related roles is strong, with Data Analyst and Data Scientist positions leading the pack.
+2. **Emphasis on SQL and Python:** SQL and Python lead in demand and offer a higher salary on average, making them the most optimal skills for anyone looking for data-related roles to learn and maximize their market value.
+3. **Path to Higher-Paying Roles:** Most data-related roles have similar skills in-demand, making it more accessible to start with the basics and work your way up from an entry level position to a more specialized niche.
+
+### Closing Thoughts
+
+This project enhanced my SQL and Data Visualization skills and provided valuable insights into the market for data-related jobs. The findings and analysis serve as a guide to prioritizing skill development and job search efforts. It also highlights the importance of continuous learning and adapting to emerging trends in the field of data.
