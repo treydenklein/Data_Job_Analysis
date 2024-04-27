@@ -26,7 +26,7 @@
 
 ### 1. Average Salaries for the Different Data-Related Job Roles
 
-SQL Query:
+#### SQL Query:
 
 - Filter job postings by the year (2023) and the country that the job is located (U.S.)
 - Group the data by job title and calculate average salary for each
@@ -64,7 +64,7 @@ ORDER BY
     avg_yearly_salary DESC;
 ```
 
-Here is a breakdown of the results:
+#### Breakdown of the Results:
 
 - Specialized roles like **Senior Data Scientist** and **Machine Learning Engineer** offer the highest salaries
 - The more entry level **Data Analyst** roles come with lower salaries in comparison
@@ -75,7 +75,7 @@ _Bar graph visualizing the average salary for each job role, comparing each to t
 
 ### 2. Market Demand by Job Title
 
-SQL Query:
+#### SQL Query:
 
 - Filter job postings by the year (2023) and the country that the job is located (U.S.)
 - Group the data by job title and calculate the number of job postings for each
@@ -113,7 +113,7 @@ ORDER BY
     job_count DESC;
 ```
 
-Here is a breakdown of the results:
+#### Breakdown of the Results:
 
 - The tech/data field, in general, is a highly demanded career path
 - **Data Analyst/Scientist** roles are needed the most, by far
@@ -124,7 +124,7 @@ _Bar graph visualizing the demand for each position, based on the number of 2023
 
 ### 3. What Skills are Needed the Most for Each Position?
 
-SQL Query:
+#### SQL Query:
 
 - Filter job postings by the year (2023) and the country that the job is located (U.S.)
 - Rank each skill according to its demand in each role
@@ -179,7 +179,7 @@ WHERE
     skill_rank <= 5;
 ```
 
-Here is a breakdown of the results:
+#### Breakdown of the Results:
 
 - **SQL:** Important for data-related roles
 - **Python:** Valued across various positions
@@ -221,7 +221,7 @@ _Bar graph visualizing the top 5 skills for Software Engineer roles, based on th
 
 ### 4. Most Optimal Skills to Learn
 
-SQL Query:
+#### SQL Query:
 
 - Filter job postings by the year (2023) and the country that the job is located (U.S.)
 - Group data by skill and calculate demand and average salary for each
@@ -268,7 +268,7 @@ ORDER BY
 LIMIT 10;
 ```
 
-Here is a breakdown of the results:
+#### Breakdown of the Results:
 
 - **SQL** and **Python** are the most in-demand skills overall
 - Focus on **SQL**, **Python**, **AWS**, and **Spark** for high-paying, in-demand roles
