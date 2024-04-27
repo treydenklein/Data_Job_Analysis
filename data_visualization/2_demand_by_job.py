@@ -21,7 +21,7 @@ plt.style.use("dark_background")  # Set plot style to dark mode
 plt.figure(figsize=(10, 6))
 plt.barh(job_titles, job_counts, color=colors)
 plt.title("Demand by Job")
-plt.xlabel("Number of Job Postings")
+plt.xlabel("Frequency")
 plt.gca().invert_yaxis()  # Invert y-axis to display highest demand at the top
 
 plt.tight_layout()  # Adjust layout to prevent overlap
