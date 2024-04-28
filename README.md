@@ -11,7 +11,7 @@
 - **SQL:** Running queries on the project database and revealing initial insights
 - **Python:** For this project, Python is primarily used for data visualization
   - **Libraries:** Pandas, Numpy, Matplotlib
-- **PostgreSQL:** Database management system
+- **PostgreSQL:** Database Management
 - **Visual Studio Code:** My preferred IDE for project management and executing scripts in various programming languages
 - **Git & GitHub:** Version control, project tracking, and sharing my scripts + analysis
 
