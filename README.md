@@ -17,10 +17,10 @@
 
 ### Initial SQL Queries - Questions to Answer:
 
-1. What are the average salaries for the different data-related job roles?
-2. Which job roles are the most in-demand?
-3. What skills are most needed for the various job roles?
-4. What are the most optimal skills to learn - based on demand and pay?
+1. Compensation: What are the average salaries for the different data-related job roles?
+2. Market Demand: Which job roles are the most in-demand?
+3. Job Essentials: What skills are most needed for the various job roles?
+4. Valuable Skills: What are the most optimal skills to learn - based on demand and pay?
 
 # Analysis
 
