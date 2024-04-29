@@ -5,7 +5,7 @@ import matplotlib.ticker as mtick  # Import ticker module
 
 # Read CSV file into pandas DataFrame
 df = pd.read_csv(
-    r"C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\most_optimal_skills_to_learn.csv"
+    r"C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\most_optimal_skills_to_learn.csv"
 )
 
 # Extract skills, demand counts, and average salaries

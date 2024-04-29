@@ -5,7 +5,7 @@ import numpy as np
 
 # Load CSV file into pandas DataFrame
 df = pd.read_csv(
-    r"C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\job_skill_demand.csv"
+    r"C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\job_skill_demand.csv"
 )
 
 # Group data by job_title

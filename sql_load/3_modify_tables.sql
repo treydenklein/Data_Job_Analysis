@@ -1,19 +1,19 @@
 -- Upload data from csv files into database tables
 
 COPY job_postings
-FROM 'C:\Users\treyd\Projects\Data Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\job_postings.csv'
+FROM 'C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\job_postings.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY companies_dim
-FROM 'C:\Users\treyd\Projects\Data Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\companies_dim.csv'
+FROM 'C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\companies_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY skills_dim
-FROM 'C:\Users\treyd\Projects\Data Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\skills_dim.csv'
+FROM 'C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\skills_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 COPY job_skills_dim
-FROM 'C:\Users\treyd\Projects\Data Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\job_skills_dim.csv'
+FROM 'C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\job_skills_dim.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 

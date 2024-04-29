@@ -5,7 +5,7 @@ import numpy as np
 
 # Load CSV into a DataFrame
 df = pd.read_csv(
-    r"C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Data_Job_Analysis\csv_files\demand_by_job.csv"
+    r"C:\Users\treyd\Projects\Data_Analytics\Data_Analysis_Portfolio_Projects\Job_Market_Analysis\csv_files\demand_by_job.csv"
 )
 
 # Extract job titles and number of job postings
